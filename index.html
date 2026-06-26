@@ -89,6 +89,23 @@
             opacity: 0.9;
             font-size: 0.9rem;
         }
+
+        /* 项目预览图样式新增 */
+        .card-preview {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .card-preview:hover img {
+            transform: scale(1.08);
+        }
         
         .card-body {
             padding: 1.5rem;
@@ -131,6 +148,9 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+            .card-preview {
+                height: 160px;
+            }
         }
     </style>
 </head>
@@ -142,36 +162,48 @@
         </header>
         
         <div class="projects-grid">
-            <!-- 项目卡片1 -->
+            <!-- 项目卡片1：餐具目标检测 -->
             <div class="project-card">
                 <div class="card-header">
                     <h2>餐具目标检测</h2>
                     <p>项目负责人 · 2025年01月</p>
                 </div>
+                <!-- 预览图区域，点击跳转详情 -->
+                <a class="card-preview" href="https://meee.com.tw/oEqHu0D" target="_blank" title="点击查看餐具检测项目详情">
+                    <img src="https://meee.com.tw/oEqHu0D" alt="餐具目标检测项目预览图">
+                </a>
                 <div class="card-body">
                     <p>基于deeplabv3+的餐具语义分割系统，包含完整的数据集、模型代码和文档说明。</p>
                     <a href="https://pan.baidu.com/s/1fdZtJDdTyDQJBM4hryUilw?pwd=wxdy" class="download-btn" target="_blank">下载资源</a>
                 </div>
             </div>
             
-            <!-- 项目卡片2 -->
+            <!-- 项目卡片2：道路病害检查 -->
             <div class="project-card">
                 <div class="card-header" style="background: #3a86ff;">
                     <h2>道路病害检查</h2>
                     <p>算法实现和数据标注 · 2026年1月</p>
                 </div>
+                <!-- 预览图区域，点击跳转详情 -->
+                <a class="card-preview" href="https://meee.com.tw/mkCh8Xw" target="_blank" title="点击查看道路检测项目详情">
+                    <img src="https://meee.com.tw/mkCh8Xw" alt="道路病害检查项目预览图">
+                </a>
                 <div class="card-body">
                     <p>基于ROI与OpenCV边缘检测的道路病害检查分析项目，包含预处理代码、训练模型和测试数据集。</p>
                     <a href="https://pan.baidu.com/s/1gClwwQKiiswtEKscB6JnZw?pwd=n9eq" class="download-btn" style="background: #3a86ff;" target="_blank">下载资源</a>
                 </div>
             </div>
             
-            <!-- 项目卡片3 -->
+            <!-- 项目卡片3：政治练习软件 -->
             <div class="project-card">
                 <div class="card-header" style="background: #7209b7;">
                     <h2>政治练习软件</h2>
                     <p>数据标注与模型调参 · 2026年4月</p>
                 </div>
+                <!-- 预览图区域，点击跳转详情 -->
+                <a class="card-preview" href="https://meee.com.tw/Cf4TLNk" target="_blank" title="点击查看政治主观题判分项目详情">
+                    <img src="https://meee.com.tw/Cf4TLNk" alt="政治主观题判分项目预览图">
+                </a>
                 <div class="card-body">
                     <p>基于MacBert的政治主观题判分系统，包含优化后的算法实现代码。</p>
                     <a href="https://pan.baidu.com/s/1MLrO1MqePfGIBbCuTwgIHw?pwd=gj3i" class="download-btn" style="background: #7209b7;" target="_blank">下载资源</a>
